@@ -1,6 +1,8 @@
 # Keyword.Scatter
 
-### Steps in R:
+Here you can find the package I created for assignment 2 of my STAT-545B class. In the package, I used the function I created in assigment 1.
+
+### Steps taken to create package in R:
 
 1. create_package() to start the "Keyword.Scatter" package
 2. use_git() to convert it to a git repository
