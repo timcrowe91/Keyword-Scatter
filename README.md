@@ -1,15 +1,62 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
 # Keyword.Scatter
 
-Here you can find the package I created for assignment 2 of my STAT-545B class. In the package, I used the function I created in assigment 1.
+<!-- badges: start -->
 
-### Steps taken to create package in R:
+<!-- badges: end -->
 
-1. create_package() to start the "Keyword.Scatter" package
-2. use_git() to convert it to a git repository
-3. In terminal:
-    * "git remote add origin https://github.com/timcrowe91/Keyword.Scatter" to connect my local repo to GitHub
-    * "git push -u origin master" to push everything to my GitHub repo
-4. use_r("Keyword") to create the script to put my function in
-5. Manually edited DESCRIPTION file in R-Studio to input title, author, description
-6. use_mit_license("Tim Crowe")
-7. Used Roxygen to create documentation and rendered using document()
+Keyword.Scatter is a package created for assigment 2 of my STAT-545B
+course. The package contains the function `kw_scatter()`, which creates
+a ggplot scatter graph from a tibble that has been filtered by the
+chosen keyword contained in a chosen column.
+
+## Installation
+
+You can install the development version from
+[GitHub](https://github.com/) with:
+
+``` r
+install.packages("devtools")
+devtools::install_github("timcrowe91/Keyword.Scatter")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+``` r
+library(Keyword.Scatter)
+library(gapminder)
+library(dplyr)
+#> 
+#> Attaching package: 'dplyr'
+#> The following objects are masked from 'package:stats':
+#> 
+#>     filter, lag
+#> The following objects are masked from 'package:base':
+#> 
+#>     intersect, setdiff, setequal, union
+
+1 + 1
+#> [1] 2
+#kw_scatter(data = gapminder, keyword = "United", keyword_column = country, x = lifeExp, y = gdpPercap)
+```
+
+## Step By Step Process To Create Package
+
+1.  create\_package() to start the “Keyword.Scatter” package
+2.  use\_git() to convert it to a git repository
+3.  In terminal:
+      - “git remote add origin
+        <https://github.com/timcrowe91/Keyword.Scatter>” to connect my
+        local repo to GitHub
+      - “git push -u origin master” to push everything to my GitHub repo
+4.  use\_r(“Keyword”) to create the script to put my function in
+5.  use\_readme\_rmd() to create README file
+6.  build\_readme() to render README (ongoing)
+7.  Manually edited DESCRIPTION file in R-Studio to input title, author,
+    description
+8.  use\_mit\_license(“Tim Crowe”)
+9.  Used Roxygen to create documentation and rendered using document()
