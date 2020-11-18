@@ -30,14 +30,6 @@ This is a basic example which shows you how to solve a common problem:
 library(Keyword.Scatter)
 library(gapminder)
 library(dplyr)
-#> 
-#> Attaching package: 'dplyr'
-#> The following objects are masked from 'package:stats':
-#> 
-#>     filter, lag
-#> The following objects are masked from 'package:base':
-#> 
-#>     intersect, setdiff, setequal, union
 
 # TEST WITH "..." ----- alpha transparency etc... put it in the geom_point() ?
 kw_scatter(data = gapminder, keyword = "United", keyword_column = country, x = lifeExp, y = gdpPercap)

@@ -34,7 +34,7 @@ devtools::install_github("timcrowe91/Keyword.Scatter")
 
 This is a basic example which shows you how to solve a common problem:
 
-```{r example}
+```{r example, message=FALSE}
 library(Keyword.Scatter)
 library(gapminder)
 library(dplyr)
