@@ -1,4 +1,11 @@
-kw_test <-
+kw_test <- gapminder %>%
+  filter(grepl("United", country)) %>%
+  drop_na(lifeExp) %>%
+  drop_na(gdpPercap) %>%
+  ggplot(aes(x = lifeExp, y = gdpPercap)) +
+  geom_point() +
+  theme_bw()
+
 
 test_that("kw_scatter tests", {
 
@@ -6,13 +13,7 @@ test_that("kw_scatter tests", {
 
   expect_error(kw_scatter(vancouver_trees, "JAPANESE", common_name, date_planted, diameter, xtrim = 0.01))
 
-  expect_equal(kw_scatter(data = datateachr::steam_games, keyword = "Action", keyword_column = genre, x = original_price, y = achievements),
-               datateachr::steam_games %>%
-                 filter(grepl("Action", genre)) %>%
-                 drop_na(original_price) %>%
-                 drop_na(achievements) %>%
-                 ggplot(aes(x = original_price, y = achievements)) +
-                 geom_point() +
-                 theme_bw())
+  expect_equal(kw_scatter(data = gapminder, keyword = "United", keyword_column = country, x = lifeExp, y = gdpPercap),
+  kw_test)
 
 })

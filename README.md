@@ -39,11 +39,11 @@ library(dplyr)
 #> 
 #>     intersect, setdiff, setequal, union
 
-1 + 1
-#> [1] 2
 # TEST WITH "..." ----- alpha transparency etc... put it in the geom_point() ?
-#kw_scatter(data = gapminder, keyword = "United", keyword_column = country, x = lifeExp, y = gdpPercap)
+kw_scatter(data = gapminder, keyword = "United", keyword_column = country, x = lifeExp, y = gdpPercap)
 ```
+
+<img src="man/figures/README-example-1.png" width="100%" />
 
 ## Step By Step Process To Create Package
 
@@ -64,7 +64,6 @@ library(dplyr)
 10. use\_testthat() to create files for tests
 11. use\_test(“kw\_scatter”) to create test script for function, and
     filled with tests from assigment 1b
-12. use\_package() to add dependencies for “dplyr”, “tidyr”,
-    ?????“gapminder”, “datateachr”, “stats”, “magrittr”
-    ??????????????????
-13. Add imported functions to function script
+12. use\_package() to add dependencies for “dplyr”, “tidyr”, “stats”,
+    “magrittr” & “ggplot2”
+13. Add imported functions to function script for pipe operator
