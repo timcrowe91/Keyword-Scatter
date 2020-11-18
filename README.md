@@ -41,6 +41,7 @@ library(dplyr)
 
 1 + 1
 #> [1] 2
+# TEST WITH "..." ----- alpha transparency etc... put it in the geom_point() ?
 #kw_scatter(data = gapminder, keyword = "United", keyword_column = country, x = lifeExp, y = gdpPercap)
 ```
 
