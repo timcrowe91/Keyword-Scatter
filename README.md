@@ -61,3 +61,4 @@ library(dplyr)
     description
 8.  use\_mit\_license(“Tim Crowe”)
 9.  Used Roxygen to create documentation and rendered using document()
+10. use\_testthat() to create files for tests

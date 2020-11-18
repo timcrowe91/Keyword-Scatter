@@ -58,3 +58,4 @@ library(dplyr)
 7. Manually edited DESCRIPTION file in R-Studio to input title, author, description
 8. use_mit_license("Tim Crowe")
 9. Used Roxygen to create documentation and rendered using document()
+10. use_testthat() to create files for tests
