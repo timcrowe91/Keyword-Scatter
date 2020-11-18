@@ -62,3 +62,5 @@ library(dplyr)
 8.  use\_mit\_license(“Tim Crowe”)
 9.  Used Roxygen to create documentation and rendered using document()
 10. use\_testthat() to create files for tests
+11. use\_test(“kw\_scatter”) to create test script for function, and
+    filled with tests from assigment 1b
