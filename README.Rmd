@@ -61,4 +61,5 @@ kw_scatter(data = gapminder, keyword = "United", keyword_column = country, x = l
 11. use_test("kw_scatter") to create test script for function, and filled with tests from assigment 1b
 12. use_package() to add dependencies for "dplyr", "tidyr", "stats", "magrittr" & "ggplot2"
 13. use_pipe() to allow function to call pipe operator
+14. use_vignette() and input brief description of function
 
