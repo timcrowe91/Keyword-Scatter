@@ -18,7 +18,7 @@ The `kw_scatter` function is the first (and so far, only) function in the `Keywo
 
 The filtering is done by searching for a certain "keyword" in a specified column.
 
-```{r setup}
+```{r setup, message = FALSE}
 library(Keyword.Scatter)
 library(gapminder)
 library(dplyr)
