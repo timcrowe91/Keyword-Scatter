@@ -32,7 +32,7 @@ library(gapminder)
 library(dplyr)
 
 # TEST WITH "..." ----- alpha transparency etc... put it in the geom_point() ?
-kw_scatter(data = gapminder, keyword = "United", keyword_column = country, x = lifeExp, y = gdpPercap)
+kw_scatter(data = gapminder::gapminder, keyword = "United", keyword_column = country, x = lifeExp, y = gdpPercap)
 ```
 
 <img src="man/figures/README-example-1.png" width="100%" />
@@ -55,10 +55,7 @@ kw_scatter(data = gapminder, keyword = "United", keyword_column = country, x = l
 9.  Used Roxygen to create documentation and rendered using document()
 10. use\_testthat() to create files for tests
 11. use\_test(“kw\_scatter”) to create test script for function, and
-    filled with tests from assigment 1b
-12. use\_package() to add dependencies for “dplyr”, “tidyr”, “stats”,
-    “magrittr” & “ggplot2”
-13. use\_package(“gapminder”, type = “Suggests”) to use gapminder in
-    vignette etc
-14. use\_pipe() to allow function to call pipe operator
-15. use\_vignette() and input brief description of function
+    filled with gapminder tests from assigment 1b
+12. use\_package() to add dependencies
+13. use\_pipe() to allow function to call pipe operator
+14. use\_vignette() and input brief description of function

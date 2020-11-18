@@ -27,5 +27,5 @@ library(dplyr)
 Here is an example of the function, filtering the `gapminder` dataset to only include countries with "United" it their name, then plotting `gdpPercap` vs `lifeExp`:
 
 ```{r message=FALSE}
-kw_scatter(data = gapminder, keyword = "United", keyword_column = country, x = lifeExp, y = gdpPercap)
+kw_scatter(data = gapminder::gapminder, keyword = "United", keyword_column = country, x = lifeExp, y = gdpPercap)
 ```

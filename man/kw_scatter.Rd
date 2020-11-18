@@ -49,6 +49,6 @@ Plot a keyword-filtered scatter graph
 }
 \examples{
 
-kw_scatter(data = gapminder, keyword = "United", keyword_column = country, x = lifeExp, y = gdpPercap)
+kw_scatter(data = gapminder::gapminder, keyword = "United", keyword_column = country, x = lifeExp, y = gdpPercap)
 
 }
