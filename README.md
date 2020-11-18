@@ -58,5 +58,7 @@ kw_scatter(data = gapminder, keyword = "United", keyword_column = country, x = l
     filled with tests from assigment 1b
 12. use\_package() to add dependencies for “dplyr”, “tidyr”, “stats”,
     “magrittr” & “ggplot2”
-13. use\_pipe() to allow function to call pipe operator
-14. use\_vignette() and input brief description of function
+13. use\_package(“gapminder”, type = “Suggests”) to use gapminder in
+    vignette etc
+14. use\_pipe() to allow function to call pipe operator
+15. use\_vignette() and input brief description of function

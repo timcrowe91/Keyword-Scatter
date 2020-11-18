@@ -15,7 +15,8 @@ RoxygenNote: 7.1.1
 Suggests: 
     testthat,
     knitr,
-    rmarkdown
+    rmarkdown,
+    gapminder
 Imports: 
     dplyr,
     magrittr,
