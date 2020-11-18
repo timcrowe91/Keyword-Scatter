@@ -64,6 +64,7 @@ library(dplyr)
 10. use\_testthat() to create files for tests
 11. use\_test(“kw\_scatter”) to create test script for function, and
     filled with tests from assigment 1b
-12. use\_package() to add dependencies for “dplyr”, “gapminder”,
-    “datateachr”, “stats”, “magrittr” ??????????????????
+12. use\_package() to add dependencies for “dplyr”, “tidyr”,
+    ?????“gapminder”, “datateachr”, “stats”, “magrittr”
+    ??????????????????
 13. Add imported functions to function script

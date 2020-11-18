@@ -31,8 +31,8 @@ kw_scatter <- function(data, keyword, keyword_column, x, y, xlogscale = FALSE, y
 
   data %>%
     dplyr::filter(grepl(keyword, {{ keyword_column }})) %>%
-    {if (na.rm) dplyr::drop_na(., {{ x }}) else .} %>%
-    {if (na.rm) dplyr::drop_na(., {{ y }}) else .} %>%
+    {if (na.rm) tidyr::drop_na(., {{ x }}) else .} %>%
+    {if (na.rm) tidyr::drop_na(., {{ y }}) else .} %>%
     {if (xtrim) dplyr::filter(., dplyr::between({{ x }}, stats::quantile({{ x }}, xtrim / 2), stats::quantile({{ x }}, 1 - xtrim / 2))) else .} %>%
     {if (ytrim) dplyr::filter(., dplyr::between({{ y }}, stats::quantile({{ y }}, ytrim / 2), stats::quantile({{ y }}, 1 - ytrim / 2))) else .} %>%
     ggplot2::ggplot(ggplot2::aes({{ x }}, {{ y }})) +

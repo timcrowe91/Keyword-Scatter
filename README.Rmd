@@ -60,6 +60,6 @@ library(dplyr)
 9. Used Roxygen to create documentation and rendered using document()
 10. use_testthat() to create files for tests
 11. use_test("kw_scatter") to create test script for function, and filled with tests from assigment 1b
-12. use_package() to add dependencies for "dplyr", "gapminder", "datateachr", "stats", "magrittr" ??????????????????
+12. use_package() to add dependencies for "dplyr", "tidyr", ?????"gapminder", "datateachr", "stats", "magrittr" ??????????????????
 13. Add imported functions to function script
 
