@@ -18,8 +18,6 @@
 #'
 #' @export
 #'
-#' @importFrom magrittr %>%
-#'
 #' @examples
 #'
 #' kw_scatter(data = gapminder, keyword = "United", keyword_column = country, x = lifeExp, y = gdpPercap)

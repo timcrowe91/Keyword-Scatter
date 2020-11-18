@@ -58,4 +58,4 @@ kw_scatter(data = gapminder, keyword = "United", keyword_column = country, x = l
     filled with tests from assigment 1b
 12. use\_package() to add dependencies for “dplyr”, “tidyr”, “stats”,
     “magrittr” & “ggplot2”
-13. Add imported functions to function script for pipe operator
+13. use\_pipe() to allow function to call pipe operator
