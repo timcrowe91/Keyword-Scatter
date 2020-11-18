@@ -31,7 +31,6 @@ library(Keyword.Scatter)
 library(gapminder)
 library(dplyr)
 
-# TEST WITH "..." ----- alpha transparency etc... put it in the geom_point() ?
 kw_scatter(data = gapminder::gapminder, keyword = "United", keyword_column = country, x = lifeExp, y = gdpPercap)
 ```
 
