@@ -39,7 +39,7 @@ kw_scatter(
 
 \item{na.rm}{Choice of keeping or removing NA values.}
 
-\item{...}{Further arguments.}
+\item{...}{Further arguments to be used inside the geom_point() function of the plot (eg colour = "Red")}
 }
 \value{
 A ggplot geom_point() graph

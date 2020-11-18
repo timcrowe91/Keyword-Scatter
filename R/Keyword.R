@@ -10,7 +10,7 @@
 #' @param xtrim Option to trim a certain proportion of the x-axis data (split across either end of the value range). Value should be between 0 and 1.
 #' @param ytrim Option to trim a certain proportion of the y-axis data (split across either end of the value range). Value should be between 0 and 1
 #' @param na.rm Choice of keeping or removing NA values.
-#' @param ... Further arguments.
+#' @param ... Further arguments to be used inside the geom_point() function of the plot (eg colour = "Red")
 #'
 #' @return
 #'
@@ -34,7 +34,7 @@ kw_scatter <- function(data, keyword, keyword_column, x, y, xlogscale = FALSE, y
     {if (xtrim) dplyr::filter(., dplyr::between({{ x }}, stats::quantile({{ x }}, xtrim / 2), stats::quantile({{ x }}, 1 - xtrim / 2))) else .} %>%
     {if (ytrim) dplyr::filter(., dplyr::between({{ y }}, stats::quantile({{ y }}, ytrim / 2), stats::quantile({{ y }}, 1 - ytrim / 2))) else .} %>%
     ggplot2::ggplot(ggplot2::aes({{ x }}, {{ y }})) +
-    ggplot2::geom_point() +
+    ggplot2::geom_point(...) +
     {if (xlogscale == TRUE) ggplot2::scale_x_log10()} +
     {if (ylogscale == TRUE) ggplot2::scale_y_log10()} +
     ggplot2::theme_bw()
