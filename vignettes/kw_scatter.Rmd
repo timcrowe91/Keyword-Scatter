@@ -14,6 +14,18 @@ knitr::opts_chunk$set(
 )
 ```
 
+The `kw_scatter` function is the first (and so far, only) function in the `Keyword.Scatter` package. The goal of the function is to quickly create a filtered scatter plot.
+
+The filtering is done by searching for a certain "keyword" in a specified column.
+
 ```{r setup}
 library(Keyword.Scatter)
+library(gapminder)
+library(dplyr)
+```
+
+Here is an example of the function, filtering the `gapminder` dataset to only include countries with "United" it their name, then plotting `gdpPercap` vs `lifeExp`:
+
+```{r message=FALSE}
+kw_scatter(data = gapminder, keyword = "United", keyword_column = country, x = lifeExp, y = gdpPercap)
 ```
